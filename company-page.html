@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="ru">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <title>home-page</title>
+    <title>company</title>
     <link rel="stylesheet" href="css/font-awesome.min.css"/>
     <link href="css/screen.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="css/print.css" media="print" rel="stylesheet" type="text/css" />
@@ -47,7 +47,6 @@
             <div id="login-content">
               <form action="#">
                 <fieldset class="inputs">
-                  <a class="forgot-password" href="#">забыли пароль?</a>
                   <ul class="authorization-input">
                     <li><input id="username" type="email" name="Email" placeholder="логин" required></li>
                     <li><input id="password" type="password" name="Password" placeholder="*****" required></li>
@@ -69,14 +68,14 @@
     </header>
     <nav class="main-nav">
       <ul class="btn">
-        <li class="home-page-button-active"><a class="active-btn" href="#">главная</a></li>
+        <li class="home-page-button"><a href="index.html">главная</a></li>
         <li class="goal-button"><a href="goal-page.html">цель проекта</a></li>
-        <li class="company-button"><a href="company-page.html">компании</a></li>
+        <li class="company-button-active"><a class="active-btn" href="#">компании</a></li>
       </ul>
     </nav>
     <div class="wrapper">
       <aside class="sidebar">
-        <h2 class="head">Категории</h2>
+        <a href="#"><h2 class="head">Категории</h2></a>
         <ul class="side-nav">
           <li><a href="#">CMS</a></li>
           <li><a href="#">Design Patterns</a></li>
@@ -96,53 +95,77 @@
           <li><a href="#"><img src="img/as.png" alt="alt-soft-a"></a></li>
         </ul>
       </aside>
-      <main class="main-content">
-        <ul class="home-pages">
-          <li>
-          <article class="post-body">
-          <h2 class="content-header">Кризис и IT</h2>
-            <header class="post-head">
-              <p>Автор:<a href="#" rel="author">Руслан Пилин</a></p>
-              <p>Категории:<a href="#">Рынок труда</a>, <a href="#">Дзен</a></p>
-              <time>2009-02-09</time>
-            </header>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ipsa odit omnis recusandae veritatis! Accusamus architecto blanditiis deleniti dolorem eius expedita facere harum hic impedit, incidunt officia provident ullam voluptates?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ipsa odit omnis recusandae veritatis! Accusamus architecto blanditiis deleniti dolorem eius expedita facere harum hic impedit, incidunt officia provident ullam voluptates? <a href="#">Читать далее »»</a></p>
-            <footer>
-              <p class="vote"><span class="grey-vote">3 голосов <a href="#">24 Коментария »</a></span></p>
-            </footer>
-          </article>
-          </li>
-          <li>
-            <article class="post-body">
-            <h2 class="content-header">Кризис и IT</h2>
-              <header class="post-head">
-                <p>Автор:<a href="#" rel="author">Руслан Пилин</a></p>
-                <p>Категории:<a href="#">Рынок труда</a>, <a href="#">Дзен</a></p>
-                <time>2009-02-09</time>
-              </header>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ipsa odit omnis recusandae veritatis! Accusamus architecto blanditiis deleniti dolorem eius expedita facere harum hic impedit, incidunt officia provident ullam voluptates?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ipsa odit omnis recusandae veritatis! Accusamus architecto blanditiis deleniti dolorem eius expedita facere harum hic impedit, incidunt officia provident ullam voluptates? <a href="#">Читать далее »»</a></p>
-              <footer>
-                <p class="vote"><span class="grey-vote">3 голосов <a href="#">24 Коментария »</a></span></p>
-              </footer>
-            </article>
-          </li>
-          <li>
-            <article class="post-body">
-            <h2 class="content-header">Кризис и IT</h2>
-              <header class="post-head">
-                <p>Автор:<a href="#" rel="author">Руслан Пилин</a></p>
-                <p>Категории:<a href="#">Рынок труда</a>, <a href="#">Дзен</a></p>
-                <time>2009-02-09</time>
-              </header>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ipsa odit omnis recusandae veritatis! Accusamus architecto blanditiis deleniti dolorem eius expedita facere harum hic impedit, incidunt officia provident ullam voluptates?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ipsa odit omnis recusandae veritatis! Accusamus architecto blanditiis deleniti dolorem eius expedita facere harum hic impedit, incidunt officia provident ullam voluptates? <a href="#">Читать далее »»</a></p>
-              <footer>
-                <p class="vote"><span class="grey-vote">3 голосов <a href="#">24 Коментария »</a></span></p>
-              </footer>
-                <a class="prev-rec" href="#">предыдущие записи</a>
-            </article>
-          </li>
-        </ul>
-      </main>
+    <main class="main-content">
+      <h2 class="content-header">Компании</h2>
+      <ul class="pages">
+        <li>
+          <a href="#"><img class="company-logo" src="img/cube.png" alt="company-logo"></a>
+          <div class="container">
+            <h3 class="company-name">Kyosho Inc.</h3>
+            <dl class="company-form">
+              <dt class="text-grey">количество работников</dt>
+              <dd>50</dd>
+              <dt class="text-grey">технологии</dt>
+              <dd>PHP, Flash, Ruby</dd>
+              <dt class="text-grey">возраст (лет на рынке)</dt>
+              <dd>20</dd>
+              <dt class="text-grey">сайт</dt>
+              <dd><a class="text-blue" href="#">www.kyosho.org</a></dd>
+              <dt class="text-grey">CEO</dt>
+              <dd>Agent Anderson Smith</dd>
+            </dl>
+            <dl class="contacts-form">
+              <dt></dt>
+              <dd>
+                <a class="text-black" href="tel:+11858745254"> +1 185 8745-254</a>
+              </dd>
+              <dd>
+                <a class="text-black" href="skype:smithy?call">smithy</a>
+              </dd>
+              <dd>
+                <a class="text-black" href="mailto:smithy@sobakka.net">smithy@sobakka.net</a>
+              </dd>
+              <dd>
+                <a class="text-black" href="https://twitter.com/intent/tweet?screen_name=@smither">smither</a>
+              </dd>
+            </dl>
+          </div>
+        </li>
+        <li>
+          <a href="#"><img class="company-logo" src="img/cube.png" alt="company-logo"></a>
+          <div class="container">
+            <h3 class="company-name">Kyosho Inc.</h3>
+            <dl class="company-form">
+              <dt class="text-grey">количество работников</dt>
+              <dd>50</dd>
+              <dt class="text-grey">технологии</dt>
+              <dd>PHP, Flash, Ruby</dd>
+              <dt class="text-grey">возраст (лет на рынке)</dt>
+              <dd>20</dd>
+              <dt class="text-grey">сайт</dt>
+              <dd><a class="text-blue" href="#">www.kyosho.org</a></dd>
+              <dt class="text-grey">CEO</dt>
+              <dd>Agent Anderson Smith</dd>
+            </dl>
+            <dl class="contacts-form">
+              <dt></dt>
+              <dd>
+                <a class="text-black" href="tel:+11858745254"> +1 185 8745-254</a>
+              </dd>
+              <dd>
+                <a class="text-black" href="skype:smithy?call">smithy</a>
+              </dd>
+              <dd>
+                <a class="text-black" href="mailto:smithy@sobakka.net">smithy@sobakka.net</a>
+              </dd>
+              <dd>
+                <a class="text-black" href="https://twitter.com/intent/tweet?screen_name=@smither">smither</a>
+              </dd>
+            </dl>
+          </div>
+        </li>
+      </ul>
+    </main>
     </div>
     <footer class="main-footer">
       <div class="footer-wrapper">
